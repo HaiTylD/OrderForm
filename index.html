@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+
+    <link rel="stylesheet/less" type="text/css" href="styles/styles.less" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<h1 class="text-center">Billy Bob's Burgers & Subs</h1>
+<p class="text-center"><em>-Food with attitude</em></p>
+<body>
+<div class="container">
+    <h2>Customer Information</h2>
+    <form method="post">
+        <div class="row">
+            <div class="col-md-12">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Last Name" required>
+                <input type="text" name="name" id="name" placeholder="Last Name" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" placeholder="Number" required>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <p>Create a password for future orders:</p>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+            </div>
+        </div>
+        <br>
+        <h2>Place an Order!</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <input type="radio" name="food" value="burger" id="burger" checked>
+                <label for="burger">Burger</label>
+                <input type="radio" name="food" value="sub" id="sub">
+                <label for="sub">Sub</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <label for="toppings">Toppings:</label>
+                <input type="checkbox" name="toppings" value="toppings" id="toppings"> Lettuce
+                <input type="checkbox" name="toppings" value="toppings" id="toppings"> Onion
+                <input type="checkbox" name="toppings" value="toppings" id="toppings"> Pickle
+                <input type="checkbox" name="toppings" value="toppings" id="toppings"> Tomato
+                <input type="checkbox" name="toppings" value="toppings" id="toppings"> Bacon
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="condiment" class="text-center" >Condiments:</label>
+                <select name="Condiments" id="condiment" multiple="multiple" size="5">
+                    <option value="oil">Oil</option>
+                    <option value="mayonaise">Mayonaise</option>
+                    <option value="ketchup">Ketchup</option>
+                    <option value="mustard">Mustard</option>
+                    <option value="bbq">BBQ sauce</option>
+                    <option value="ranch">Ranch</option>
+                </select>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="comments" class="text-center">Special Requests:</label>
+                    <textarea name="comments" id="comments" rows="4" cols="50"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <input class="btn btn-primary" type="submit" value="Submit Order">
+                <input class="btn btn-secondary" type="reset" value="Start Over">
+            </div>
+        </div>
+    </form>
+</div>
+
+</body>
+
+<script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/less" ></script>
+</html>
